@@ -1,0 +1,34 @@
+.accordion {
+  width: 100%;
+  &-container {
+    max-width: 1280px;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+
+    &__text {
+      display: none;
+
+      &--show {
+        font-size: 28px;
+        font-family: sans-serif;
+        font-weight: 600;
+        display: block;
+      }
+    }
+  }
+  &-content-first {
+    margin-bottom: 12px;
+  }
+  &-button--first {
+    background: rgb(252, 224, 173);
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  &-button--second {
+    background: rgb(173, 228, 252);
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}
