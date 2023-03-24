@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../styles/styles.scss";
 
 function DOMRef() {
-  const [isActive, setisActive] = useState(true);
+  const [isActive, setisActive] = useState(false);
   //   const toggleClass = ()
   const toggleBetween = (value) => {
     if (isActive === value) {
@@ -17,7 +17,7 @@ function DOMRef() {
         <div className="accordion-content-first">
           <button
             className="accordion-button--first"
-            onClick={() => toggleBetween(!true)}
+            onClick={() => toggleBetween(true)}
           >
             Open According 1
           </button>
@@ -37,7 +37,7 @@ function DOMRef() {
         <div className="accordion-content-second">
           <button
             className="accordion-button--second"
-            onClick={() => toggleBetween(!true)}
+            onClick={() => toggleBetween(false)}
           >
             Open According 2
           </button>
