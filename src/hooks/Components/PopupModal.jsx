@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import "../styles/styles.scss";
+import "../../styles/styles.scss";
 import PopupContent from "./PopupContent";
 
 function PopupModal() {
@@ -12,7 +12,7 @@ function PopupModal() {
         <button onClick={() => setopenModal(!false)}>Open Modal</button>
       </div>
 
-      <PopupContent openModal={openModal} setClosePopup={setopenModal} />
+      <PopupContent openModal={openModal} setopenModal={setopenModal} />
     </>
   );
 }
