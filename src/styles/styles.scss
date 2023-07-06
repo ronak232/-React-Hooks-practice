@@ -8,8 +8,6 @@
     flex-direction: column;
 
     &__text {
-      display: none;
-
       &--show {
         font-size: 28px;
         font-family: sans-serif;
@@ -52,7 +50,7 @@
     padding: 58px 12px 18px 12px;
     position: relative;
     border-radius: 5px;
-    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
   }
 
   &-close-btn {
