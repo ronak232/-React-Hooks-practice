@@ -1,21 +1,27 @@
 import React from "react";
 import { useState } from "react";
-import data from "../data.json";
 import "../styles/styles.scss";
 
 function DOMRef() {
   const [isActive, setisActive] = useState(false);
   //   const toggleClass = ()
+<<<<<<< HEAD
   const toggleBetween = (item) => {
     isActive !== item ? setisActive(item) : setisActive(false);
     // console.log(isActive !== item)
-    // console.log(item);
+    console.log(item);
+=======
+  const toggleBetween = (value) => {
+    if (isActive === value) {
+      return setisActive(true);
+    }
+    setisActive(value);
+>>>>>>> parent of 8cf8b5f (Accordion update)
   };
-
   return (
     <div className="accordion">
       <div className="accordion-container">
-        {/* <div className="accordion-content-first">
+        <div className="accordion-content-first">
           <button
             className="accordion-button--first"
             onClick={() => toggleBetween(true)}
@@ -57,29 +63,6 @@ function DOMRef() {
             assumenda consectetur quaerat sequi! Tempora ab atque obcaecati vel
             autem?
           </div>
-        </div> */}
-        <div>
-          <ul className="accordion-content-first">
-            {data.accordion.map((item, index) => {
-              return (
-                <>
-                  {isActive === index && (
-                    <li className="accordion-container__text" key={item.id}>
-                      {/* {item.content} */}
-                      <span>{item.content}</span>
-                    </li>
-                  )}
-
-                  <button
-                    className="accordion-button--first"
-                    onClick={() => toggleBetween(index)}
-                  >
-                    click
-                  </button>
-                </>
-              );
-            })}
-          </ul>
         </div>
       </div>
     </div>
